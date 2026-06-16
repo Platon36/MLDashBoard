@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML Summer 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div>
+        <p class="eyebrow">Лето 2026</p>
+        <h1>ML Summer 2026</h1>
+        <p class="subtitle">путь от новичка до Junior ML Engineer</p>
+      </div>
+      <div class="header-actions">
+        <button id="themeToggle" class="button secondary" type="button">Темная тема</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span id="headerProgress">0%</span>
+        <p>общий прогресс</p>
+      </div>
+      <div>
+        <span id="headerTopics">0 / 0</span>
+        <p>выполнено тем</p>
+      </div>
+      <div>
+        <span id="headerStreak">0</span>
+        <p>дней подряд</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="section">
+      <div class="section-title">
+        <h2>Обзор</h2>
+      </div>
+      <div id="overviewCards" class="cards-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Roadmap</h2>
+        <p>Учебные блоки, темы, заметки и даты завершения</p>
+      </div>
+      <div id="roadmap" class="roadmap"></div>
+    </section>
+
+    <section class="section split">
+      <div class="panel">
+        <div class="section-title">
+          <h2>Сегодня</h2>
+          <p id="todayDate"></p>
+        </div>
+        <form id="dailyForm" class="form-stack">
+          <label>
+            <span>Сколько часов занимался</span>
+            <input id="dailyHours" type="number" min="0" step="0.25" placeholder="2">
+          </label>
+          <label>
+            <span>Что изучал</span>
+            <textarea id="dailyLearned" rows="3"></textarea>
+          </label>
+          <label>
+            <span>Что сделал практически</span>
+            <textarea id="dailyPractice" rows="3"></textarea>
+          </label>
+          <label>
+            <span>Что было непонятно</span>
+            <textarea id="dailyQuestions" rows="3"></textarea>
+          </label>
+          <button class="button primary" type="submit">Сохранить день</button>
+        </form>
+      </div>
+      <div class="panel">
+        <div class="section-title">
+          <h2>История</h2>
+          <p>Последние записи</p>
+        </div>
+        <div id="dailyHistory" class="history-list"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Проекты</h2>
+      </div>
+      <div id="projects" class="projects-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Навыки</h2>
+      </div>
+      <div id="skills" class="skills-grid"></div>
+    </section>
+
+    <section class="section tools-panel">
+      <div class="section-title">
+        <h2>Данные</h2>
+        <p>Экспорт, импорт и сброс прогресса</p>
+      </div>
+      <div class="tool-actions">
+        <button id="exportButton" class="button secondary" type="button">Export progress</button>
+        <label class="button secondary file-button">
+          Import progress
+          <input id="importInput" type="file" accept="application/json">
+        </label>
+        <button id="resetButton" class="button danger" type="button">Reset progress</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

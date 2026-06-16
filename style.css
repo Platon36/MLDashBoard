@@ -1,0 +1,421 @@
+:root {
+  --bg: #f7f8fa;
+  --panel: #ffffff;
+  --soft: #eef1f4;
+  --soft-strong: #e2e6ea;
+  --text: #15181c;
+  --muted: #68717d;
+  --border: #dce1e6;
+  --accent: #2f80ed;
+  --accent-soft: #dcecff;
+  --danger: #d84a4a;
+  --shadow: 0 12px 30px rgba(22, 28, 36, 0.07);
+}
+
+body.dark {
+  --bg: #111418;
+  --panel: #181c21;
+  --soft: #22272e;
+  --soft-strong: #2c333b;
+  --text: #edf1f5;
+  --muted: #a2acb8;
+  --border: #303842;
+  --accent: #6aa9ff;
+  --accent-soft: #19314f;
+  --danger: #ff7474;
+  --shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.site-header {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 36px 20px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: clamp(34px, 7vw, 68px);
+  line-height: 1;
+}
+
+h2 {
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.subtitle,
+.section-title p,
+.muted {
+  color: var(--muted);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-stats div,
+.card,
+.block,
+.panel,
+.project-card,
+.skill-card,
+.tools-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.hero-stats div {
+  padding: 18px;
+}
+
+.hero-stats span {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.hero-stats p {
+  margin: 2px 0 0;
+  color: var(--muted);
+}
+
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 12px 20px 48px;
+}
+
+.section {
+  margin-top: 28px;
+}
+
+.section-title {
+  margin-bottom: 14px;
+}
+
+.cards-grid,
+.projects-grid,
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card,
+.project-card,
+.skill-card,
+.panel,
+.tools-panel {
+  padding: 18px;
+}
+
+.card-value {
+  display: block;
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.roadmap {
+  display: grid;
+  gap: 14px;
+}
+
+.block {
+  overflow: hidden;
+}
+
+.block-summary {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 18px;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.block-summary h3 {
+  margin: 0;
+}
+
+.block-meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.progress-track {
+  height: 9px;
+  margin-top: 12px;
+  overflow: hidden;
+  background: var(--soft);
+  border-radius: 999px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  border-radius: inherit;
+  transition: width 0.2s ease;
+}
+
+.topics {
+  display: none;
+  padding: 0 18px 18px;
+}
+
+.block.open .topics {
+  display: grid;
+  gap: 10px;
+}
+
+.topic-row {
+  display: grid;
+  grid-template-columns: auto 1.2fr 150px 1.5fr 150px;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  background: var(--soft);
+  border-radius: 8px;
+}
+
+.topic-row input[type="text"],
+.topic-row input[type="date"],
+.topic-row select,
+.project-card input,
+.project-card textarea,
+.project-card select,
+.form-stack input,
+.form-stack textarea {
+  width: 100%;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 10px;
+}
+
+.topic-name {
+  font-weight: 700;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.form-stack label span,
+.project-card label span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.history-list {
+  display: grid;
+  gap: 10px;
+}
+
+.history-item {
+  padding: 12px;
+  background: var(--soft);
+  border-radius: 8px;
+}
+
+.history-item p {
+  margin-bottom: 6px;
+}
+
+.project-card {
+  display: grid;
+  gap: 12px;
+}
+
+.stages {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.checkbox-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.skill-card {
+  display: grid;
+  gap: 10px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.skill-controls {
+  display: grid;
+  grid-template-columns: 38px 1fr 38px;
+  gap: 8px;
+  align-items: center;
+}
+
+.level-dots {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.level-dot {
+  height: 9px;
+  background: var(--soft-strong);
+  border-radius: 999px;
+}
+
+.level-dot.active {
+  background: var(--accent);
+}
+
+.tool-actions,
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  min-height: 40px;
+  padding: 9px 14px;
+  color: var(--text);
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.button.secondary:hover {
+  border-color: var(--accent);
+}
+
+.button.danger {
+  color: var(--danger);
+}
+
+.file-button input {
+  display: none;
+}
+
+.empty-state {
+  color: var(--muted);
+  padding: 14px;
+  background: var(--soft);
+  border-radius: 8px;
+}
+
+@media (max-width: 860px) {
+  .header-content,
+  .split {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .hero-stats,
+  .cards-grid,
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-row {
+    grid-template-columns: 1fr;
+  }
+
+  .stages {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    padding-top: 24px;
+  }
+
+  .layout {
+    padding-inline: 14px;
+  }
+
+  .site-header {
+    padding-inline: 14px;
+  }
+}

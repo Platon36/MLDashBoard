@@ -1,0 +1,154 @@
+{
+  "theme": "light",
+  "topics": {
+    "block-0-topic-0": {
+      "done": true,
+      "status": "done",
+      "note": "Списки, циклы, условия, функции. Практика: scores/prices, фильтрация цен, функция predict_price(area, price_per_meter).",
+      "completedDate": "2026-06-04"
+    },
+    "block-0-topic-1": {
+      "done": false,
+      "status": "not started",
+      "note": "Следующий шаг: попробовать Jupyter Notebook или ноутбуки Kaggle.",
+      "completedDate": ""
+    },
+    "block-0-topic-2": {
+      "done": false,
+      "status": "in progress",
+      "note": "Начал NumPy: array, min/max/mean/std, форматирование вывода через f-string.",
+      "completedDate": ""
+    },
+    "block-1-topic-0": {
+      "done": false,
+      "status": "in progress",
+      "note": "Разобраны среднее, дисперсия, стандартное отклонение, коэффициент вариации, z-score.",
+      "completedDate": ""
+    },
+    "block-1-topic-3": {
+      "done": false,
+      "status": "in progress",
+      "note": "Понимание признаков X, целевой переменной y; пример с price как target и brand/year/mileage/engine_power как features.",
+      "completedDate": ""
+    },
+    "block-2-topic-0": {
+      "done": false,
+      "status": "in progress",
+      "note": "Начальное понимание подготовки данных: признаки, целевая переменная, тип задачи.",
+      "completedDate": ""
+    },
+    "block-2-topic-3": {
+      "done": false,
+      "status": "in progress",
+      "note": "Понимание: регрессия предсказывает числовую величину, классификация — принадлежность к классу.",
+      "completedDate": ""
+    }
+  },
+  "dailyEntries": [
+    {
+      "date": "2026-06-16",
+      "hours": "1",
+      "learned": "Создание HTML-дашборда прогресса ML Summer 2026. Понял, что данные хранятся в localStorage и их нужно экспортировать в JSON.",
+      "practice": "Создан GitHub-репозиторий MLDashBoard, добавлены index.html, style.css, script.js, README.md.",
+      "questions": "Нужно настроить регулярный backup прогресса и, возможно, GitHub Pages."
+    },
+    {
+      "date": "2026-06-04",
+      "hours": "2",
+      "learned": "Python основы для Data Science: списки, min/max/mean, циклы, условия, функции. Начало NumPy: массивы, mean/std, форматирование чисел.",
+      "practice": "Написал код со scores, prices, фильтрацией цен больше 5 500 000 и функцией predict_price.",
+      "questions": "Как правильно форматировать несколько чисел через f-string; как выводить std с двумя знаками после запятой."
+    },
+    {
+      "date": "2026-06-03",
+      "hours": "1.5",
+      "learned": "Базовая статистика и временные ряды: moving average, z-score, дисперсия, стандартное отклонение, коэффициент вариации.",
+      "practice": "Разобрал применение временных рядов для раннего выявления заболеваний животных.",
+      "questions": "Как practically использовать rolling mean и z-score на реальных данных."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mini Python DS Project",
+      "status": "in progress",
+      "github": "",
+      "description": "Мини-проект для закрепления Python, NumPy/Pandas и базовой статистики.",
+      "stages": {
+        "EDA": false,
+        "preprocessing": false,
+        "model training": false,
+        "evaluation": false,
+        "README": false,
+        "GitHub published": false
+      }
+    },
+    {
+      "name": "Titanic Kaggle",
+      "status": "planned",
+      "github": "",
+      "description": "Первый учебный Kaggle-проект на классификацию.",
+      "stages": {
+        "EDA": false,
+        "preprocessing": false,
+        "model training": false,
+        "evaluation": false,
+        "README": false,
+        "GitHub published": false
+      }
+    },
+    {
+      "name": "House Prices Kaggle",
+      "status": "planned",
+      "github": "",
+      "description": "Учебный Kaggle-проект на регрессию.",
+      "stages": {
+        "EDA": false,
+        "preprocessing": false,
+        "model training": false,
+        "evaluation": false,
+        "README": false,
+        "GitHub published": false
+      }
+    },
+    {
+      "name": "Classification Project",
+      "status": "planned",
+      "github": "",
+      "description": "Отдельный проект на задачу классификации.",
+      "stages": {
+        "EDA": false,
+        "preprocessing": false,
+        "model training": false,
+        "evaluation": false,
+        "README": false,
+        "GitHub published": false
+      }
+    },
+    {
+      "name": "Final ML Project",
+      "status": "planned",
+      "github": "",
+      "description": "Итоговый ML-проект полного цикла: анализ данных, подготовка, модель, метрики, README, публикация на GitHub.",
+      "stages": {
+        "EDA": false,
+        "preprocessing": false,
+        "model training": false,
+        "evaluation": false,
+        "README": false,
+        "GitHub published": false
+      }
+    }
+  ],
+  "skills": {
+    "Python": 2,
+    "NumPy": 1,
+    "Pandas": 1,
+    "Matplotlib": 0,
+    "Statistics": 1,
+    "Scikit-Learn": 0,
+    "SQL": 3,
+    "Kaggle": 1,
+    "PyTorch": 1,
+    "GitHub Portfolio": 1
+  }
+}
